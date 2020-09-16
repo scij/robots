@@ -4,9 +4,6 @@
  * specifies the terms and conditions for redistribution.
  */
 
-#ifndef lint
-static char sccsid[] = "@(#)score.c	5.1 (Berkeley) 5/30/85";
-#endif // not lint
 
 # include	"robots.h"
 # include	<pwd.h>

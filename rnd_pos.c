@@ -4,10 +4,6 @@
  * specifies the terms and conditions for redistribution.
  */
 
-#ifndef lint
-static char sccsid[] = "@(#)rnd_pos.c	5.1 (Berkeley) 5/30/85";
-#endif // not lint
-
 # include	"robots.h"
 
 # define	IS_SAME(p,y,x)	((p).y != -1 && (p).y == y && (p).x == x)

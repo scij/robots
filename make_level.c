@@ -4,12 +4,9 @@
  * specifies the terms and conditions for redistribution.
  */
 
-#ifndef lint
-static char sccsid[] = "@(#)make_level.c	5.1 (Berkeley) 5/30/85";
-#endif // not lint
-
 # include	"robots.h"
 # include   <stdlib.h>
+# include   <string.h>
 
 /*
  * make_level:

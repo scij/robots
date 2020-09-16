@@ -10,10 +10,6 @@ char copyright[] =
  All rights reserved.\n";
 #endif // not lint
 
-#ifndef lint
-static char sccsid[] = "@(#)main.c	5.1 (Berkeley) 5/30/85";
-#endif // not lint
-
 # include	"robots.h"
 # include	<signal.h>
 # include	<ctype.h>
