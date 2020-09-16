@@ -28,7 +28,7 @@
 # define	MAXSCORES	(Y_SIZE - 2)
 # define	MAXNAME		16
 # define	MS_NAME		"Ten"
-# define	SCOREFILE	"/usr/games/lib/robots_roll"
+# define	SCOREFILE	"/usr/local/var/robots/robots_roll"
 
 /*
  * characters on screen
@@ -43,7 +43,7 @@
  */
 
 # undef		CTRL
-# define	CTRL(X)	('X' - 'A' + 1)
+# define	CTRL(X)	(X - 'A' + 1)
 
 /*
  * type definitions

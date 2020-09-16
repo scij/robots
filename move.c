@@ -145,13 +145,13 @@ teleport:
 			refresh();
 			flush_in();
 			goto ret;
-		  case CTRL(L):
+		  case CTRL('L'):
 			wrefresh(curscr);
 			break;
 		  case EOF:
 			break;
 		  default:
-			putchar(CTRL(G));
+			putchar(CTRL('G'));
 			reset_count();
 			fflush(stdout);
 			break;
@@ -215,7 +215,7 @@ int do_move(int dy, int dx)
 			refresh();
 		}
 		else {
-			putchar(CTRL(G));
+			putchar(CTRL('G'));
 			reset_count();
 		}
 		return FALSE;

@@ -15,6 +15,10 @@ static char sccsid[] = "@(#)score.c	5.1 (Berkeley) 5/30/85";
 # include   <stdlib.h>
 # include   <string.h>
 
+# ifndef MAX_PER_UID
+# define MAX_PER_UID 5
+# endif // MAX_PER_UID
+
 typedef struct passwd	PASSWD;
 
 char	*Scorefile = SCOREFILE;

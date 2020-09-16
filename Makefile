@@ -19,12 +19,23 @@ CFLAGS=		-O ${DEFS}
 robots: ${OBJS}
 	${CC} ${CFLAGS} -o robots ${OBJS} -lncurses
 
+extern.o: extern.c robots.h
+flush_in.o: flush_in.c robots.h
+init_field.o: init_field.c robots.h
+main.o: main.c robots.h
+move_robs.o: move_robs.c robots.h
+move.o: move.c robots.h
+play_level.o: play_level.c robots.h
+query.o: query.c robots.h
+rnd_pos.o: rnd_pos.c robots.h
+score.o: score.c robots.h
+
 lint:
-	lint -hb ${DEFS} ${CFILES} -lcurses 2&gt;1 &gt; lint.out
+	lint -hb ${DEFS} ${CFILES} -lcurses 2>&1 > lint.out
 
 install: robots
 	install -s -m 4711 -o daemon robots ${DESTDIR}/usr/games
-	install -c -m 644 -o daemon /dev/null ${DESTDIR}/usr/games/lib/robots_roll
+	install -c -m 644 -o daemon /dev/null ${DESTDIR}/usr/local/var/robots/robots_roll
 
 clean:
 	rm -f a.out core *.o robots lint.out errs
